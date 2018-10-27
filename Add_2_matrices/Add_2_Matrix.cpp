@@ -3,30 +3,30 @@ using namespace std;
 
 void main()
 {
-   int r, c, m1[10][10], m2[10][10], sum[10][10];
+   int t, c, n1[20][20], n2[20][20], s[20][20];
 
-   cout<<"Enter the number of rows(should be >1 and <10): ";
-   cin>>r;
-   cout<<"Enter the number of column(should be >1 and <10): ";
+   cout<<"Enter the number of rows(should be >1 and <20): ";
+   cin>>t;
+   cout<<"Enter the number of column(should be >1 and <20): ";
    cin>>c;
    cout << "Enter the elements of first 1st matrix: ";
-   for (int i = 0;i<r;i++ ) {
+   for (int i = 0;i<t;i++ ) {
      for (int j = 0;j < c;j++ ) {
-       cin>>m1[i][j];
+       cin>>n1[i][j];
      }
    }
    cout << "Enter the elements of first 1st matrix: ";
-   for (int i = 0;i<r;i++ ) {
+   for (int i = 0;i<t;i++ ) {
      for (int j = 0;j<c;j++ ) {
-       cin>>m2[i][j];
+       cin>>n2[i][j];
      }
    }
 
    cout<<"Output: ";
-   for (int i = 0;i<r;i++ ) {
+   for (int i = 0;i<t;i++ ) {
       for (int j = 0;j<c;j++ ) {
-        sum[i][j]=m1[i][j]+m2[i][j];
-        cout<<sum[i][j]<<" ";
+        s[i][j]=n1[i][j]+n2[i][j];
+        cout<<s[i][j]<<" ";
       }
    }
 
