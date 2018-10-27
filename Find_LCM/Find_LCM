@@ -3,22 +3,22 @@ using namespace std;
 
 void main()
 {
-    int a, b, max;
+    int t, n, max;
 
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
+    cout << "Enter two numbers to find LCM: ";
+    cin >> t >> n;
     
-    // maximum value between a and b is stored in max
-    max = (a > b) ? a : b;
+    // maximum value between t and n is stored in max
+    max = (t > n) ? t : n;
 
     do
     {
-        if (max % a == 0 && max % b == 0)
+        if (max % t == 0 && max % n == 0)
         {
             cout << "LCM = " << max;
             break;
         }
         else
             ++max;
-    } while (true);
+    } while (1);
 }
