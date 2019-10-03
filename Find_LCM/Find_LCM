@@ -6,7 +6,7 @@ void main()
     int a, b, max;
 
     cout << "Enter two numbers: ";
-    cin >> a >> b;
+    cin >> a >> b; //Take input
     
     // maximum value between a and b is stored in max
  
